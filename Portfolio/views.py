@@ -12,4 +12,4 @@ def projects(request):
     return render(request, 'projects.html')
 
 def contacts(request):
-    return render(request, 'contacts.html')
+    return render(request, 'construction.html')

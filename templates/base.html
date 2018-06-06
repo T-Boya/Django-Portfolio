@@ -10,7 +10,9 @@
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='full' %}
     {% load staticfiles %}
-    <link href = "{% static 'CSS/base.css' %}" rel = "stylesheet" type = "text/css" >  
+    <link href = "{% static 'CSS/base.css' %}" rel = "stylesheet" type = "text/css" >
+    {% endblock %}
+    {% block CSS %}
     {% endblock %}
     {% block icon %}
     <link href = "{% static 'IMG/icon.png' %}" rel="icon" type="image/gif">
