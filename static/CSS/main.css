@@ -1,0 +1,90 @@
+/* LEFT SIDE TEXT */
+.text {
+color: rgba(26, 25, 25, 0.623);
+margin-left: 4vw;
+}
+/* LEFT SIDE TEXT */
+
+/* RIGHT SIDE */
+#right{
+float: right;
+width: 50%;
+height: 100%;
+background: white;
+margin-right: 3vw;
+margin-bottom: 2vh;
+margin-top: 10vh;
+border-radius: 3vh;
+background-size: contain;
+}
+/* RIGHT SIDE */
+
+/* FACE */
+    /* FACE ROTATION */
+    .rotate{
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+        
+        overflow:hidden;
+        
+        }
+        
+        .rotate:hover
+        {
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        }
+    /* FACE ROTATION */
+    
+    /* FACE CENTERING */
+    #face {
+        height: 50vh;
+        width: 50vh;
+        margin-left: 5vw;
+        margin-top: 10vh;
+    }
+
+    #face a {
+        outline: 0;
+     }
+    /* FACE CENTERING */
+
+    /* FACE MINIMUM SCREEN SIZE */
+    @media screen and (max-width: 705px) {
+        #face {
+            display: none;
+          }
+    }
+    /* FACE MINIMUM SCREEN SIZE */
+/* FACE */
+
+
+/* BUTTON EFFECTS */
+.btn.btn-primary.btn-md {
+    margin-left: 26vh;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    opacity: 0%;
+    background: none;
+    padding: 12px 22px;
+    border: 2px solid #8a5d2a;
+    color: #422918;
+}
+a{
+    color: #422918;
+}
+.btn.btn-primary.btn-md a:hover{
+    text-decoration: none;
+    color: #422918;
+}
+/* BUTTON EFFECTS */
+
+/* END */

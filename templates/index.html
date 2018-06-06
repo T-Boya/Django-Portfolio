@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block CSS %}
+{% load static %}
+    <link href = "{% static 'CSS/main.css' %}" rel = "stylesheet" type = "text/css" >  
+{% endblock %}
+{% block title %}
+       <title>Tinashe Osewe</title>
+{% endblock %}
+    {% block content %}
+
+
+      <!-- RIGHT SIDE -->
+      <div id=right>
+        <!-- TEXT BEGINS -->
+        <div class = "text">
+            <h1>Tinashe Osewe</h1>
+            <h6>
+                Age: 18,
+                Height: 6'4
+            </h6>
+            <h6>
+                Nationality: Kenyan,
+                Education: High School
+            </h6>
+            <p>
+              Up and coming web and android developer.
+            </p>
+            <!-- TEXT ENDS -->
+
+             <!-- ROTATING FACE BEGINS -->
+        <div class="right-center" >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                        <img id = "face" class= "rotate center" src="{% static 'IMG/icon.png' %}">        
+                </div>
+                <!-- ROTATING FACE ENDS -->
+            <!-- BUTTON BEGINS -->
+            <div>
+                <button type="button" class="btn btn-primary btn-md"> <a href = "#">Request a site</a></button>
+            </div>
+            <!-- BUTTON ENDS -->
+    </div>
+  </div>
+  </div>
+</div>
+</div>    
+{% endblock %}

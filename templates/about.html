@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block CSS %}
+{% load static %}
+       <link href = "{% static 'CSS/about.css' %}" rel = "stylesheet" type = "text/css" >
+{% endblock %}
+{% block title %}
+       <title>About Me</title>
+{% endblock %}
+
+{% block content%}
+    <!-- About -->
+    <div class = "about">
+        <h1>Who am I?</h1>
+        <h2>I am a student, an avid reader, and a big nerd.</h2>
+        <h3>I'm just your average Joe. 18 years old, about to start college, super lazy; same old, same old.
+            I like anime, video games and fast food. Oh, and I know how to bake the perfect cookie.
+        </h3>
+        <h4>Thats about all there is to it. Want to know more? Ask a question!</h4>
+    </div>
+    <!-- About -->
+                            
+{% endblock %}

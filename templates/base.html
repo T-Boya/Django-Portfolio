@@ -1,0 +1,52 @@
+{% load bootstrap3 %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+    {% block title %}
+    <title>Tinashe Osewe</title>
+    {% endblock %}
+    {% block css_main %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    {% load staticfiles %}
+    <link href = "{% static 'CSS/base.css' %}" rel = "stylesheet" type = "text/css" >  
+    {% endblock %}
+    {% block icon %}
+    <link href = "{% static 'IMG/icon.png' %}" rel="icon" type="image/gif">
+     {% endblock %}
+       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    </head>
+    <body>
+        {% block navbar %}
+        <!-- NAVBAR BEGINS -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                        <a class="navbar-brand"><img src=
+                            "https://fontmeme.com/permalink/180209/0124fa6671b8124cbd4c25c19588b81e.png" 
+                                alt="calligraphy-fonts" style="width: 30px;" border="0"></a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                    <li class = "About"><a href= "{% url 'about' %}"> About </a></li>
+                    <li class = "Projects"><a href= "{% url 'projects' %}"> Projects </a></li>
+                    <li class = "Contacts"><a href= "{% url 'contacts' %}"> Contacts </a></li>
+                  </ul>
+                </div>
+              </nav>
+        <!-- NAVBAR ENDS -->
+        {% endblock %}
+        <div class = "content" style="padding-top: 10vh;">
+        {% block content %}
+        {% endblock %}
+        </div>
+
+    {% block footer %}
+        <!-- BOTTOM -->
+        <div class = "jumbotron">
+                <p><a href= "{% url 'contacts' %}">Privacy Policy</a> | <a href= "{% url 'contacts' %}">Terms & Conditions</a></p>
+                    </div>
+    {% endblock %}
+    </body>
