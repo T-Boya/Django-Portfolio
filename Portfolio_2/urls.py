@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^about/', views.about, name = 'about'),
     url(r'^projects/', views.projects, name = 'projects'),
     url(r'^contacts/', views.contacts, name = 'contacts'),
+    url(r'^construction/', views.construction, name = 'construction'),
 ]
