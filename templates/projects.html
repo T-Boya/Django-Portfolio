@@ -8,8 +8,75 @@
 {% endblock %}
 
 {% block content %}
-    <!-- SLIDESHOW -->
+<!-- THIS WAS AN ATTEMPT TO MAKE A SLIDESHOW OF IFRAMES TO THE DEPLOYED WEBSITES
+    SLIDESHOW
     <iframe width="420" height="315" src="https://nemorooms.herokuapp.com/" frameborder="0" allowfullscreen></iframe>
-    <!-- SLIDESHOW -->
+    SLIDESHOW -->
+<!-- <div style="width: 25%; height: 25%">
+    <img src="{% static 'IMG/Nemo.png' %}">
+</div> -->
+<div class="projects" style="padding-left: 5vw; padding-left: 5vw;">
+    <h1 style="text-align: center; color: #2D2422;">Django</h1>
+    <div style="float: left; margin-right: 2vw; margin-bottom: 2vh;">
+        <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+        <img src="{% static 'IMG/Nemo.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+        <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+            <h4>Nemo</h4>
+            <p>Anonymous chat rooms</p>
+            <h5><a href="https://github.com/T-Boya/Nemo">Github</a> | <a href="https://nemorooms.herokuapp.com/">Heroku</a> </h5>
+        </div>
+    </div>
+
+    <div style="float: left; margin-right: 2vw; margin-bottom: 2vh;">
+            <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+            <img src="{% static 'IMG/Piccy.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+            <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+                <h4>Piccy</h4>
+                <p>Instagramesque image sharing and rating website</p>
+                <h5><a href="https://github.com/T-Boya/Instagram-Clone">Github</a> | <a href="https://instagram-a-g-a-i-n.herokuapp.com/">Heroku</a> </h5>
+            </div>
+        </div>
+
+        <div style="float: left; margin-bottom: 2vh;">
+            <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+            <img src="{% static 'IMG/CartierYeux.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+            <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+                <h4>CartierYeux</h4>
+                <p>Nieghborhood highlight and detail website</p>
+                <h5><a href="https://github.com/T-Boya/CartierYeux">Github</a> | <a href="https://cartieryeux.herokuapp.com/">Heroku</a> </h5>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; color: #2D2422;">Angular</h1>
+        <div style="float: left; margin-right: 2vw; margin-bottom: 5vh;">
+                <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+                <img src="{% static 'IMG/Quotes.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+                <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+                    <h4>Quotes</h4>
+                    <p>Quote display website</p>
+                    <h5><a href="https://github.com/T-Boya/Quote-Website">Github</a> | <a href="https://t-boya.github.io/Quote-Website/">Github Deploy</a> </h5>
+                </div>
+            </div>
+
+            <div style="float: left; margin-right: 2vw; margin-bottom: 5vh;">
+                    <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+                    <img src="{% static 'IMG/Gitsearch.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+                    <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+                        <h4>Github Repository Search</h4>
+                        <p>Quote display website</p>
+                        <h5><a href="https://github.com/T-Boya/Github-User-Repository-Search">Github</a> | <a href="https://t-boya.github.io/Github-User-Repository-Search/">Github Deploy</a> </h5>
+                    </div>
+                </div>
+
+                <div style="float: left; margin-right: 2vw; margin-bottom: 5vh;">
+                    <div class="overbox" style="border-top-right-radius: 10px; border-top-left-radius: 10px; background: url('/static/IMG/background_dark.jpg'); background-size: cover; width: 100%; height: 1vh;"></div>
+                    <img src="{% static 'IMG/Diary.png' %}" style="width: 28.6vw; margin: 0; border-right: solid 1px #2D2422; border-left: solid 1px #2D2422;">
+                    <div class="underbox" style="margin: 0; margin-top: -1.5vh; padding-top: 0.5vh; background: url('/static/IMG/background_dark.jpg'); background-size: cover;  border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; color: white; text-align: center; padding-bottom: 1vh;">
+                        <h4>Diary</h4>
+                        <p>Diary website</p>
+                        <h5><a href="https://github.com/T-Boya/Diary-Website">Github</a> | <a href="https://t-boya.github.io/Diary-Website/">Github Deploy</a> </h5>
+                    </div>
+                </div>
+</div>
 
 {% endblock %}

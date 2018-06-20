@@ -45,3 +45,7 @@ color: black;
     color: black;
 }
 /* BOTTOM */
+
+a {
+    color: inherit;
+} 
